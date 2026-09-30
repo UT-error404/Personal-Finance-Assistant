@@ -134,6 +134,28 @@ h1, h2, h3, h4 {{ font-family: 'DM Sans', sans-serif !important; color: {N}; fon
     font-family: 'DM Sans', sans-serif !important;
     font-size: 0.92rem !important;
     background: {WHITE} !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}}
+
+/* ── INPUT TEXT VISIBILITY ── */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input,
+[data-baseweb="input"] input,
+[data-baseweb="textarea"] textarea,
+[data-baseweb="select"] *,
+[data-baseweb="select"] [role="option"] {{
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}}
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder,
+.stNumberInput input::placeholder {{
+    color: #5A6B7C !important;
+    -webkit-text-fill-color: #5A6B7C !important;
+    opacity: 1 !important;
 }}
 
 .stTabs [data-baseweb="tab-list"] {{ border-bottom: 2px solid {BORD}; gap: 0; }}
